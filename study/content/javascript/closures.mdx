@@ -1,0 +1,24 @@
+---
+title: Closures
+code: |
+  function outer() {
+    let count = 0
+    return function () {
+      count++
+      console.log(count)
+    }
+  }
+
+  const fn = outer()
+  fn()
+  fn()
+---
+A **closure** is when a function remembers its lexical scope.
+
+My terms:
+It is when there is a function inside of a funcition that uses the content of outer function to perform task.
+
+## Example
+```js
+
+
